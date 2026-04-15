@@ -6,9 +6,15 @@ import time
 import requests
 from bs4 import BeautifulSoup
 import os
+import concurrent.futures
 
 PORT = 5000
 documents = []
+MAX_WORKERS = 4  # 限制并发线程数
+REQUEST_TIMEOUT = 30  # 请求超时时间（秒）
+
+# 创建线程池
+thread_pool = concurrent.futures.ThreadPoolExecutor(max_workers=MAX_WORKERS)
 
 class MCPRequestHandler(http.server.SimpleHTTPRequestHandler):
     def do_POST(self):
@@ -26,12 +32,19 @@ class MCPRequestHandler(http.server.SimpleHTTPRequestHandler):
                 return
             
             try:
-                result = crawl_document(url)
+                # 使用线程池处理爬取任务，避免阻塞主线程
+                future = thread_pool.submit(crawl_document, url)
+                result = future.result(timeout=REQUEST_TIMEOUT)
                 documents.append(result)
                 self.send_response(200)
                 self.send_header('Content-type', 'application/json')
                 self.end_headers()
                 self.wfile.write(json.dumps({'success': True, 'data': result}).encode('utf-8'))
+            except concurrent.futures.TimeoutError:
+                self.send_response(504)
+                self.send_header('Content-type', 'application/json')
+                self.end_headers()
+                self.wfile.write(json.dumps({'error': 'Request timeout'}).encode('utf-8'))
             except Exception as e:
                 self.send_response(500)
                 self.send_header('Content-type', 'application/json')
