@@ -145,7 +145,7 @@ def crawl_document(url):
         }
         
         # 保存爬取结果
-        save_path = os.path.join(os.path.dirname(__file__), '../../data')
+        save_path = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(__file__)))), 'data')
         os.makedirs(save_path, exist_ok=True)
         
         filename = url.replace('://', '_').replace('/', '_').replace('.', '_') + '.json'

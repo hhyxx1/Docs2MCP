@@ -7,7 +7,7 @@ import hashlib
 from datetime import datetime, timedelta
 
 scheduler = sched.scheduler(time.time, time.sleep)
-DATA_DIR = os.path.join(os.path.dirname(__file__), '../../data')
+DATA_DIR = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(__file__)))), 'data')
 
 class DocumentWatcher:
     def __init__(self, crawl_func, check_interval=3600):

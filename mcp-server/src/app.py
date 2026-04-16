@@ -1,9 +1,13 @@
 from flask import Flask, request, jsonify
 import os
+import json
 import logging
 from dotenv import load_dotenv
-from utils.crawler import crawl_document, load_documents
+from utils.crawler import (
+    crawl_document, crawl_documentation, load_crawled_documents, get_crawled_projects
+)
 from utils.scheduler import start_scheduler, init_watcher, get_watcher
+import threading
 
 load_dotenv()
 
@@ -16,7 +20,9 @@ logger = logging.getLogger(__name__)
 app = Flask(__name__)
 
 documents = []
-DATA_DIR = os.path.join(os.path.dirname(__file__), '../../data')
+DATA_DIR = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(__file__)))), 'data')
+
+crawl_tasks = {}
 
 @app.after_request
 def after_request(response):
@@ -33,22 +39,87 @@ def add_document():
         return jsonify({'error': 'URL is required'}), 400
 
     try:
-        use_selenium = data.get('use_selenium', False)
-        result = crawl_document(url, use_selenium=use_selenium)
+        max_docs = data.get('max_docs', 50)
+        max_depth = data.get('max_depth', 2)
 
-        watcher = get_watcher()
-        if watcher:
-            watcher.add_document(url)
+        def crawl_task():
+            try:
+                result = crawl_documentation(url, max_docs=max_docs, max_depth=max_depth)
+                crawl_tasks[url] = {'status': 'completed', 'result': result}
+            except Exception as e:
+                crawl_tasks[url] = {'status': 'failed', 'error': str(e)}
 
-        return jsonify({'success': True, 'data': result}), 200
+        crawl_tasks[url] = {'status': 'running'}
+        thread = threading.Thread(target=crawl_task)
+        thread.daemon = True
+        thread.start()
+
+        return jsonify({
+            'success': True,
+            'message': 'Crawl started',
+            'task_id': url,
+            'status': 'running'
+        }), 200
     except Exception as e:
         logger.error(f"Failed to crawl {url}: {e}")
         return jsonify({'error': str(e)}), 500
 
+@app.route('/api/docs/crawl/<task_id>', methods=['GET'])
+def get_crawl_status(task_id):
+    task = crawl_tasks.get(task_id)
+    if not task:
+        return jsonify({'error': 'Task not found'}), 404
+    return jsonify({'task_id': task_id, **task}), 200
+
 @app.route('/api/docs/list', methods=['GET'])
 def list_documents():
-    docs = load_documents()
-    return jsonify({'success': True, 'documents': docs, 'total': len(docs)}), 200
+    projects = get_crawled_projects()
+    return jsonify({'success': True, 'projects': projects, 'total': len(projects)}), 200
+
+@app.route('/api/docs/<project_filename>', methods=['GET'])
+def get_project_documents(project_filename):
+    filepath = os.path.join(DATA_DIR, project_filename)
+    if not os.path.exists(filepath):
+        return jsonify({'error': 'Project not found'}), 404
+    try:
+        with open(filepath, 'r', encoding='utf-8') as f:
+            data = json.load(f)
+        return jsonify({'success': True, 'data': data}), 200
+    except Exception as e:
+        return jsonify({'error': str(e)}), 500
+
+@app.route('/api/docs/search', methods=['GET'])
+def search_docs():
+    query = request.args.get('q', '')
+    project = request.args.get('project', '')
+    if not query:
+        return jsonify({'error': 'Query is required'}), 400
+
+    projects = get_crawled_projects()
+    results = []
+    query_lower = query.lower()
+
+    for proj in projects:
+        if project and proj['filename'] != project:
+            continue
+        filepath = os.path.join(DATA_DIR, proj['filename'])
+        try:
+            with open(filepath, 'r', encoding='utf-8') as f:
+                data = json.load(f)
+            for doc in data.get('documents', []):
+                if query_lower in doc.get('title', '').lower() or query_lower in doc.get('content', '').lower():
+                    results.append({
+                        'title': doc.get('title', ''),
+                        'url': doc.get('url', ''),
+                        'project': proj['filename'],
+                        'snippet': doc.get('content', '')[:300]
+                    })
+                    if len(results) >= 20:
+                        break
+        except Exception:
+            continue
+
+    return jsonify({'success': True, 'query': query, 'results': results, 'total': len(results)}), 200
 
 @app.route('/api/docs/remove', methods=['POST'])
 def remove_document():
@@ -121,15 +192,48 @@ def mcp_info():
 
 @app.route('/mcp/resources', methods=['GET'])
 def mcp_resources():
-    docs = load_documents()
+    projects = get_crawled_projects()
     resources = []
-    for doc in docs:
-        resources.append({
-            'uri': f"docs://{doc.get('url', '').replace('://', '_').replace('/', '_')}",
-            'name': doc.get('title', 'Untitled'),
-            'description': f"Documentation: {doc.get('url', '')}"
-        })
-    return jsonify({'resources': resources}), 200
+    for proj in projects:
+        filepath = os.path.join(DATA_DIR, proj['filename'])
+        try:
+            with open(filepath, 'r', encoding='utf-8') as f:
+                data = json.load(f)
+            for doc in data.get('documents', []):
+                resources.append({
+                    'uri': f"docs://{doc.get('url', '').replace('://', '_').replace('/', '_')}",
+                    'name': doc.get('title', 'Untitled'),
+                    'description': doc.get('url', ''),
+                    'project': proj['filename'],
+                    'content': doc.get('content', '')[:500]
+                })
+        except Exception:
+            continue
+    return jsonify({'resources': resources, 'total': len(resources)}), 200
+
+@app.route('/mcp/resources/<resource_uri>', methods=['GET'])
+def mcp_get_resource(resource_uri):
+    projects = get_crawled_projects()
+    for proj in projects:
+        filepath = os.path.join(DATA_DIR, proj['filename'])
+        try:
+            with open(filepath, 'r', encoding='utf-8') as f:
+                data = json.load(f)
+            for doc in data.get('documents', []):
+                uri = f"docs://{doc.get('url', '').replace('://', '_').replace('/', '_')}"
+                if uri == resource_uri:
+                    return jsonify({
+                        'resource': {
+                            'uri': uri,
+                            'name': doc.get('title', 'Untitled'),
+                            'content': doc.get('content', ''),
+                            'url': doc.get('url', ''),
+                            'project': proj['filename']
+                        }
+                    }), 200
+        except Exception:
+            continue
+    return jsonify({'error': 'Resource not found'}), 404
 
 @app.route('/mcp/tools', methods=['GET'])
 def mcp_tools():
@@ -177,33 +281,48 @@ def search_documents(query, limit=10):
     if not query:
         return []
 
-    docs = load_documents()
+    projects = get_crawled_projects()
     results = []
     query_lower = query.lower()
 
-    for doc in docs:
-        content_text = ' '.join([
-            item.get('text', '') for item in doc.get('content', [])
-        ]).lower()
-        title_text = doc.get('title', '').lower()
+    for proj in projects:
+        filepath = os.path.join(DATA_DIR, proj['filename'])
+        try:
+            with open(filepath, 'r', encoding='utf-8') as f:
+                data = json.load(f)
 
-        if query_lower in content_text or query_lower in title_text:
-            matches = []
-            for item in doc.get('content', []):
-                if query_lower in item.get('text', '').lower():
-                    matches.append({
-                        'type': item.get('type'),
-                        'text': item.get('text', ''),
-                        'snippet': item.get('text', '')[:200]
+            for doc in data.get('documents', []):
+                content = doc.get('content', '')
+                title = doc.get('title', '')
+
+                if query_lower in content.lower() or query_lower in title.lower():
+                    content_lower = content.lower()
+                    matches = []
+                    start = 0
+                    while True:
+                        idx = content_lower.find(query_lower, start)
+                        if idx == -1:
+                            break
+                        snippet_start = max(0, idx - 50)
+                        snippet_end = min(len(content), idx + len(query) + 100)
+                        snippet = content[snippet_start:snippet_end]
+                        matches.append({
+                            'type': 'text',
+                            'snippet': snippet
+                        })
+                        start = idx + 1
+                        if len(matches) >= 3:
+                            break
+
+                    results.append({
+                        'url': doc.get('url'),
+                        'title': title,
+                        'project': proj['filename'],
+                        'matches': matches,
+                        'score': content_lower.count(query_lower)
                     })
-
-            results.append({
-                'url': doc.get('url'),
-                'title': doc.get('title'),
-                'matches': matches[:5],
-                'crawled_at': doc.get('crawled_at'),
-                'score': content_text.count(query_lower)
-            })
+        except Exception:
+            continue
 
     results.sort(key=lambda x: x['score'], reverse=True)
     return results[:limit]

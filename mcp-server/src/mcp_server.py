@@ -23,7 +23,7 @@ logger = logging.getLogger(__name__)
 
 HOST = '0.0.0.0'
 PORT = 5000
-DATA_DIR = os.path.join(os.path.dirname(__file__), '../../data')
+DATA_DIR = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(__file__)))), 'data')
 documents = []
 MAX_WORKERS = 4
 

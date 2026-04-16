@@ -1,0 +1,2048 @@
+{
+  "url": "https://developer.huawei.com/consumer/cn/doc/",
+  "title": "文档中心-HarmonyOS NEXT开发文档-华为开发者联盟",
+  "content": [
+    {
+      "type": "text",
+      "text": "浏览最新的 HarmonyOS 技术文档，涵盖版本说明、指南、API 参考、最佳实践和 FAQ 等，助你轻松构建 HarmonyOS 应用和元服务。"
+    },
+    {
+      "type": "text",
+      "text": "HarmonyOS 5.0及以上"
+    },
+    {
+      "type": "text",
+      "text": "HarmonyOS SDK"
+    },
+    {
+      "type": "text",
+      "text": "指导开发者通过 HarmonyOS SDK 提供的开放能力完成应用开发。"
+    },
+    {
+      "type": "text",
+      "text": "了解 HarmonyOS 版本说明。"
+    },
+    {
+      "type": "text",
+      "text": "帮助快速熟悉 HarmonyOS 应用开发流程。"
+    },
+    {
+      "type": "text",
+      "text": "学习 HarmonyOS 应用开发基础知识。"
+    },
+    {
+      "type": "text",
+      "text": "学习 ArkTS 语言"
+    },
+    {
+      "type": "text",
+      "text": "ArkTS 是 HarmonyOS 优选的主力应用开发语言。"
+    },
+    {
+      "type": "text",
+      "text": "了解应用资源和系统资源。"
+    },
+    {
+      "type": "text",
+      "text": "Ability Kit"
+    },
+    {
+      "type": "text",
+      "text": "程序框架服务提供应用程序开发和运行的应用模型。"
+    },
+    {
+      "type": "text",
+      "text": "Accessibility Kit"
+    },
+    {
+      "type": "text",
+      "text": "无障碍开发服务提供扩展服务的开放能力。"
+    },
+    {
+      "type": "text",
+      "text": "方舟数据管理提供数据存储、数据管理和数据同步能力。"
+    },
+    {
+      "type": "text",
+      "text": "方舟 UI 框架为应用的 UI 开发提供了完整的基础设施。"
+    },
+    {
+      "type": "text",
+      "text": "ArkTS 是 HarmonyOS 优选的应用高级开发语言。"
+    },
+    {
+      "type": "text",
+      "text": "方舟 Web 提供页面加载、页面交互、页面调试等能力。"
+    },
+    {
+      "type": "text",
+      "text": "Background Tasks Kit"
+    },
+    {
+      "type": "text",
+      "text": "后台任务开发服务为了保障后台音乐播放、日历提醒等功能的正常使用，系统提供了规范内受约束的后台任务。"
+    },
+    {
+      "type": "text",
+      "text": "Core File Kit"
+    },
+    {
+      "type": "text",
+      "text": "文件基础服务提供访问和管理应用文件和用户文件的能力。"
+    },
+    {
+      "type": "text",
+      "text": "Data Augmentation Kit"
+    },
+    {
+      "type": "text",
+      "text": "数据增强套件提供知识库、知识检索、端侧问答模型、RAG 等数据底座增强能力。"
+    },
+    {
+      "type": "text",
+      "text": "卡片开发服务提供一种界面展示形式。"
+    },
+    {
+      "type": "text",
+      "text": "输入法开发服务负责建立编辑框所在应用与输入法应用之间的通信通道。"
+    },
+    {
+      "type": "text",
+      "text": "进程间通信服务用于实现跨进程通信。"
+    },
+    {
+      "type": "text",
+      "text": "Localization Kit"
+    },
+    {
+      "type": "text",
+      "text": "本地化开发服务提供应用国际化和本地化服务。"
+    },
+    {
+      "type": "text",
+      "text": "UI Design Kit"
+    },
+    {
+      "type": "text",
+      "text": "UI 设计套件是符合华为 HarmonyOS Design System 定义的 UI 界面开发套件集合。"
+    },
+    {
+      "type": "text",
+      "text": "Asset Store Kit"
+    },
+    {
+      "type": "text",
+      "text": "关键资产存储服务提供用户短敏感数据的安全存储及管理能力。"
+    },
+    {
+      "type": "text",
+      "text": "Basic Services Kit"
+    },
+    {
+      "type": "text",
+      "text": "基础服务为应用开发者提供常用的基础能力。"
+    },
+    {
+      "type": "text",
+      "text": "车服务提供强大而便捷的汽车出行服务能力。"
+    },
+    {
+      "type": "text",
+      "text": "Connectivity Kit"
+    },
+    {
+      "type": "text",
+      "text": "短距通信服务设计基础通信的体验服务。"
+    },
+    {
+      "type": "text",
+      "text": "Crypto Architecture Kit"
+    },
+    {
+      "type": "text",
+      "text": "加解密算法框架服务提供加解密、签名等相关功能。"
+    },
+    {
+      "type": "text",
+      "text": "Data Loss Prevention Kit"
+    },
+    {
+      "type": "text",
+      "text": "数据防泄漏服务是系统级的数据防泄漏解决方案。"
+    },
+    {
+      "type": "text",
+      "text": "Desktop Extension Kit"
+    },
+    {
+      "type": "text",
+      "text": "桌面拓展服务为应用提供可以在状态栏与用户进行交互的功能。"
+    },
+    {
+      "type": "text",
+      "text": "Device Certificate Kit"
+    },
+    {
+      "type": "text",
+      "text": "设备证书服务提供了证书算法库和证书管理的能力。"
+    },
+    {
+      "type": "text",
+      "text": "Device Security Kit"
+    },
+    {
+      "type": "text",
+      "text": "设备安全服务提供应用设备状态检测、安全检测和可信应用服务。"
+    },
+    {
+      "type": "text",
+      "text": "Distributed Service Kit"
+    },
+    {
+      "type": "text",
+      "text": "分布式管理服务实现了分布式设备管理、分布式硬件管理、分布式键鼠穿越等能力。"
+    },
+    {
+      "type": "text",
+      "text": "Driver Development Kit"
+    },
+    {
+      "type": "text",
+      "text": "驱动开发服务提供高效、安全、便捷的外设扩展驱动开发解决方案。"
+    },
+    {
+      "type": "text",
+      "text": "Enterprise Data Guard Kit"
+    },
+    {
+      "type": "text",
+      "text": "企业数据保护服务为企业安全管控类 MDM 应用提供统一企业关键信息资产（KIA）文件的识别和外发管控能力。"
+    },
+    {
+      "type": "text",
+      "text": "算法加速服务提供高性能算法与数据结构。"
+    },
+    {
+      "type": "text",
+      "text": "Function Flow Runtime Kit"
+    },
+    {
+      "type": "text",
+      "text": "任务并发调度服务提供以数据依赖的方式构建异步并发任务的能力。"
+    },
+    {
+      "type": "text",
+      "text": "多模输入服务为您提供多种输入设备提供服务。"
+    },
+    {
+      "type": "text",
+      "text": "企业设备管理服务是一种企业级的 IT 应用解决方案。"
+    },
+    {
+      "type": "text",
+      "text": "Multimodal Awareness Kit"
+    },
+    {
+      "type": "text",
+      "text": "多模态融合感知服务作为系统为应用提供的一种基础服务。"
+    },
+    {
+      "type": "text",
+      "text": "NearLink Kit"
+    },
+    {
+      "type": "text",
+      "text": "星闪服务提供一种低功耗、高速率的短距离通信能力。"
+    },
+    {
+      "type": "text",
+      "text": "Network Kit"
+    },
+    {
+      "type": "text",
+      "text": "网络服务为您提供简单易用、低时延、高吞吐和高安全的端云传输通道。"
+    },
+    {
+      "type": "text",
+      "text": "Network Boost Kit"
+    },
+    {
+      "type": "text",
+      "text": "网络加速服务提供网络加速能力以及网络感知、网络质量预测等能力。"
+    },
+    {
+      "type": "text",
+      "text": "Online Authentication Kit"
+    },
+    {
+      "type": "text",
+      "text": "在线认证服务提供免密身份认证的移动端能力。"
+    },
+    {
+      "type": "text",
+      "text": "手写笔服务提供笔刷效果、笔迹编辑、报点预测和一笔成形的功能。"
+    },
+    {
+      "type": "text",
+      "text": "Performance Analysis Kit"
+    },
+    {
+      "type": "text",
+      "text": "性能分析服务为开发者提供应用事件、日志、跟踪分析工具。"
+    },
+    {
+      "type": "text",
+      "text": "Remote Communication Kit"
+    },
+    {
+      "type": "text",
+      "text": "远场通信服务是华为提供的 HTTP 发起数据请求的 NAPI 封装。"
+    },
+    {
+      "type": "text",
+      "text": "Sensor Service Kit"
+    },
+    {
+      "type": "text",
+      "text": "传感器服务使应用程序能够从传感器获取原始数据，并提供振感控制能力。"
+    },
+    {
+      "type": "text",
+      "text": "Service Collaboration Kit"
+    },
+    {
+      "type": "text",
+      "text": "协同服务提供了同账号下多端设备协同的能力。"
+    },
+    {
+      "type": "text",
+      "text": "Telephony Kit"
+    },
+    {
+      "type": "text",
+      "text": "蜂窝通信服务提供系列 API 帮助开发者开发通讯类应用。"
+    },
+    {
+      "type": "text",
+      "text": "应用测试服务提供了自动化测试框架，框架提供单元测试和 UI 测试能力。"
+    },
+    {
+      "type": "text",
+      "text": "Universal Keystore Kit"
+    },
+    {
+      "type": "text",
+      "text": "密钥管理服务向业务/应用提供各类密钥的统一安全操作能力。"
+    },
+    {
+      "type": "text",
+      "text": "User Authentication Kit"
+    },
+    {
+      "type": "text",
+      "text": "用户认证服务提供了锁屏口令、人脸和指纹来认证用户身份的能力。"
+    },
+    {
+      "type": "text",
+      "text": "Wear Engine Kit"
+    },
+    {
+      "type": "text",
+      "text": "穿戴服务为开发者提供华为穿戴设备开放能力。"
+    },
+    {
+      "type": "text",
+      "text": "音频服务提供场景化的音频播放、录制接口，快速构建音频高清采集及沉浸式播放能力。"
+    },
+    {
+      "type": "text",
+      "text": "AVCodec Kit"
+    },
+    {
+      "type": "text",
+      "text": "音视频编解码服务是媒体系统中的音视频的编解码、媒体文件的解析、封装、媒体数据输入等原子能力。"
+    },
+    {
+      "type": "text",
+      "text": "AVSession Kit"
+    },
+    {
+      "type": "text",
+      "text": "音视频播控服务是系统提供的音视频管控服务。"
+    },
+    {
+      "type": "text",
+      "text": "相机服务提供的接口可以开发相机应用，应用通过访问和操作相机硬件，实现基础操作。"
+    },
+    {
+      "type": "text",
+      "text": "数字版权保护服务提供的接口可以开发播放器应用。"
+    },
+    {
+      "type": "text",
+      "text": "图片处理服务是对图片像素数据进行解析、处理、构造的过程。"
+    },
+    {
+      "type": "text",
+      "text": "媒体服务提供了 AVPlayer 和 AVRecorder 用于播放、录制音视频。"
+    },
+    {
+      "type": "text",
+      "text": "Media Library Kit"
+    },
+    {
+      "type": "text",
+      "text": "媒体文件管理服务提供了管理相册和媒体文件的能力。"
+    },
+    {
+      "type": "text",
+      "text": "统一扫码服务通过系统级扫码入口实现扫码到应用的跳转。"
+    },
+    {
+      "type": "text",
+      "text": "Ringtone Kit"
+    },
+    {
+      "type": "text",
+      "text": "铃声服务是一个用于设置铃声的工具库，提供安全高品质的铃声设置体验。"
+    },
+    {
+      "type": "text",
+      "text": "AR 引擎服务是一个用于在 HarmonyOS 上构建增强现实应用的引擎。"
+    },
+    {
+      "type": "text",
+      "text": "ArkGraphics 2D"
+    },
+    {
+      "type": "text",
+      "text": "方舟 2D 图形服务主要提供图形绘制与显示相关的能力。"
+    },
+    {
+      "type": "text",
+      "text": "ArkGraphics 3D"
+    },
+    {
+      "type": "text",
+      "text": "方舟 3D 图形服务基于轻量级的 3D 引擎以及渲染管线为开发者提供基础 3D 场景绘制能力。"
+    },
+    {
+      "type": "text",
+      "text": "Graphics Accelerate Kit"
+    },
+    {
+      "type": "text",
+      "text": "图形加速服务解决游戏运行不流畅、卡顿掉帧、长时间运行造成发热发烫等痛点体验问题。"
+    },
+    {
+      "type": "text",
+      "text": "Spatial Recon Kit"
+    },
+    {
+      "type": "text",
+      "text": "提供全流程 3D 内容处理能力，可实现精细化三维建模和高效渲染。"
+    },
+    {
+      "type": "text",
+      "text": "XEngine Kit"
+    },
+    {
+      "type": "text",
+      "text": "GPU 加速引擎服务提供基于马良 GPU 的性能提升方案。"
+    },
+    {
+      "type": "text",
+      "text": "Account Kit"
+    },
+    {
+      "type": "text",
+      "text": "华为账号服务提供简单、快速、安全的登录功能。"
+    },
+    {
+      "type": "text",
+      "text": "广告服务依托华为终端平台与数据能力为您提供流量变现服务。"
+    },
+    {
+      "type": "text",
+      "text": "AppGallery Kit"
+    },
+    {
+      "type": "text",
+      "text": "应用市场服务提供应用市场业务的对外开放能力。"
+    },
+    {
+      "type": "text",
+      "text": "App Linking Kit"
+    },
+    {
+      "type": "text",
+      "text": "应用链接服务为开发者提供延迟链接、直达应用市场等能力。"
+    },
+    {
+      "type": "text",
+      "text": "Calendar Kit"
+    },
+    {
+      "type": "text",
+      "text": "日历服务提供日历与日程管理能力。"
+    },
+    {
+      "type": "text",
+      "text": "Call Service Kit"
+    },
+    {
+      "type": "text",
+      "text": "通话服务是华为提供给 VoIP 通话类应用的 VoIP 通话管理服务。"
+    },
+    {
+      "type": "text",
+      "text": "Cloud Foundation Kit"
+    },
+    {
+      "type": "text",
+      "text": "云开发服务可以按需为应用提供云函数、云数据库、云存储等云端服务。"
+    },
+    {
+      "type": "text",
+      "text": "Contacts Kit"
+    },
+    {
+      "type": "text",
+      "text": "联系人服务可以帮助开发者轻松实现联系人的增删改查等功能。"
+    },
+    {
+      "type": "text",
+      "text": "Enterprise Space Kit"
+    },
+    {
+      "type": "text",
+      "text": "为企业 IT 管控应用提供空间互传文件发送策略管控和空间灵活配置管理能力。"
+    },
+    {
+      "type": "text",
+      "text": "File Manager Service Kit"
+    },
+    {
+      "type": "text",
+      "text": "文件管理服务提供文件管理相关能力，如删除文件到回收站、获取文件图标等。"
+    },
+    {
+      "type": "text",
+      "text": "Health Service Kit"
+    },
+    {
+      "type": "text",
+      "text": "华为运动健康服务是为华为生态应用打造的基于华为账号和用户授权的运动健康数据开放平台。"
+    },
+    {
+      "type": "text",
+      "text": "应用内支付服务为开发者提供便捷的应用内支付体验和简便的接入流程。"
+    },
+    {
+      "type": "text",
+      "text": "Game Controller Kit"
+    },
+    {
+      "type": "text",
+      "text": "游戏控制器服务支持游戏适配控制器外设，解决玩家操控性问题。"
+    },
+    {
+      "type": "text",
+      "text": "Game Service Kit"
+    },
+    {
+      "type": "text",
+      "text": "游戏服务主要提供快速、低成本构建游戏基本能力与游戏场景优化服务。"
+    },
+    {
+      "type": "text",
+      "text": "Live View Kit"
+    },
+    {
+      "type": "text",
+      "text": "实况窗服务支持应用将订单或者服务的实时状态信息变化在设备的关键界面展示。"
+    },
+    {
+      "type": "text",
+      "text": "Location Kit"
+    },
+    {
+      "type": "text",
+      "text": "位置服务使用多种定位技术提供服务。"
+    },
+    {
+      "type": "text",
+      "text": "地图服务为开发者提供强大而便捷的地图能力。"
+    },
+    {
+      "type": "text",
+      "text": "Notification Kit"
+    },
+    {
+      "type": "text",
+      "text": "用户通知服务为开发者提供本地通知发布通道。"
+    },
+    {
+      "type": "text",
+      "text": "Payment Kit"
+    },
+    {
+      "type": "text",
+      "text": "华为支付服务提供了方便、安全和快捷的支付方式，商户应用/元服务集成华为支付服务便捷且快速。"
+    },
+    {
+      "type": "text",
+      "text": "PDF 服务提供了打开 PDF 文件、页面添加批注、页眉页脚、水印、背景及书签等相关的功能。"
+    },
+    {
+      "type": "text",
+      "text": "Preview Kit"
+    },
+    {
+      "type": "text",
+      "text": "文件预览服务为应用提供便捷的文件快速预览服务。"
+    },
+    {
+      "type": "text",
+      "text": "推送服务是华为提供的消息推送平台，建立了从云端到终端的消息推送通道。"
+    },
+    {
+      "type": "text",
+      "text": "阅读服务提供电子书解析、排版及阅读能力，实现多格式电子书的阅读体验。"
+    },
+    {
+      "type": "text",
+      "text": "阅读服务提供电子书解析、排版及阅读能力，实现多格式电子书的阅读体验。"
+    },
+    {
+      "type": "text",
+      "text": "Scenario Fusion Kit"
+    },
+    {
+      "type": "text",
+      "text": "融合场景服务基于 ArkUI 框架原生组件开发，提供跨多个子系统融合的场景化组件。"
+    },
+    {
+      "type": "text",
+      "text": "Screen Time Guard Kit"
+    },
+    {
+      "type": "text",
+      "text": "为你提供针对屏幕时间保护和应用访问限制的功能。"
+    },
+    {
+      "type": "text",
+      "text": "分享服务为应用提供文本、图片、视频等内容跨应用分享能力，用于将内容发送到其他应用。"
+    },
+    {
+      "type": "text",
+      "text": "钱包服务集成了终端“芯-端-云”全栈技术的开放能力。"
+    },
+    {
+      "type": "text",
+      "text": "Weather Service Kit"
+    },
+    {
+      "type": "text",
+      "text": "天气服务是鸿蒙生态下的一个数据提供服务。"
+    },
+    {
+      "type": "text",
+      "text": "Agent Framework Kit"
+    },
+    {
+      "type": "text",
+      "text": "提供了在应用内拉起智能体组合的服务，让用户可以在适当的场景下通过 UI 控件能力主动拉起智能体。"
+    },
+    {
+      "type": "text",
+      "text": "Core Speech Kit"
+    },
+    {
+      "type": "text",
+      "text": "基础语音服务集成了语音类基础 AI 能力。"
+    },
+    {
+      "type": "text",
+      "text": "Core Vision Kit"
+    },
+    {
+      "type": "text",
+      "text": "基础视觉服务是机器视觉相关的基础能力。"
+    },
+    {
+      "type": "text",
+      "text": "作为芯片使能的基础平台，提供了300+算子的支持，具备业界良好的模型兼容性。"
+    },
+    {
+      "type": "text",
+      "text": "Intents Kit"
+    },
+    {
+      "type": "text",
+      "text": "意图框架服务是 HarmonyOS 级的意图标准体系 ，意图连接了应用/元服务内的业务功能"
+    },
+    {
+      "type": "text",
+      "text": "MindSpore Lite Kit"
+    },
+    {
+      "type": "text",
+      "text": "昇思推理框架服务是 HarmonyOS 内置的轻量化 AI 引擎。"
+    },
+    {
+      "type": "text",
+      "text": "Natural Language Kit"
+    },
+    {
+      "type": "text",
+      "text": "自然语言理解服务提供了多项文本语义理解相关的基础能力。"
+    },
+    {
+      "type": "text",
+      "text": "Neural Network Runtime Kit"
+    },
+    {
+      "type": "text",
+      "text": "运行时服务是面向 AI 领域的跨芯片推理计算运行时，作为中间桥梁连通上层 AI 推理框架和底层加速芯片，实现 AI 模型的跨芯片推理计算。"
+    },
+    {
+      "type": "text",
+      "text": "场景化语音服务集成了语音类AI能力，包括朗读控件和 AI 字幕控件能力。"
+    },
+    {
+      "type": "text",
+      "text": "场景化视觉服务提供视觉相关的场景化能力。"
+    },
+    {
+      "type": "text",
+      "text": "“一次开发，多端部署”帮助开发者快速开发出适配多种类型设备的应用。"
+    },
+    {
+      "type": "text",
+      "text": "HarmonyOS 跨多设备的分布式操作系统。"
+    },
+    {
+      "type": "text",
+      "text": "方便开发者使用 C 或 C++ 语言实现应用的关键功能。"
+    },
+    {
+      "type": "text",
+      "text": "为开发者提供全开发旅程高频场景的最佳实践。"
+    },
+    {
+      "type": "text",
+      "text": "HarmonyOS 元服务的版本说明。"
+    },
+    {
+      "type": "text",
+      "text": "元服务是 HarmonyOS 提供的一种轻量应用程序形态。"
+    },
+    {
+      "type": "text",
+      "text": "元服务 API 说明。"
+    },
+    {
+      "type": "text",
+      "text": "提供元服务运营、产品、技术 FAQ。"
+    },
+    {
+      "type": "text",
+      "text": "DevEco Studio 使用指南"
+    },
+    {
+      "type": "text",
+      "text": "运行在 HarmonyOS 系统上的应用和服务，提供一站式的开发平台。"
+    },
+    {
+      "type": "text",
+      "text": "DevEco Service 使用指南"
+    },
+    {
+      "type": "text",
+      "text": "了解 ohpm-repo 私仓搭建工具。"
+    },
+    {
+      "type": "text",
+      "text": "HarmonyOS 应用的单元测试、集成测试和专项测试。"
+    },
+    {
+      "type": "text",
+      "text": "应用基础功能和兼容性体验建议"
+    },
+    {
+      "type": "text",
+      "text": "牵引应用的稳定性改进，构建稳定和体验良好的应用生态。"
+    },
+    {
+      "type": "text",
+      "text": "HarmonyOS 应用的稳定性体验建议。"
+    },
+    {
+      "type": "text",
+      "text": "应用和元服务的性能体验建议。"
+    },
+    {
+      "type": "text",
+      "text": "应用和元服务的低功耗设计、开发及检测。"
+    },
+    {
+      "type": "text",
+      "text": "提升应用的用户体验，规范应用全生命周期的安全、隐私行为。"
+    },
+    {
+      "type": "text",
+      "text": "提供应用框架开发等内容的 FAQ。"
+    },
+    {
+      "type": "text",
+      "text": "AppGallery Connect"
+    },
+    {
+      "type": "text",
+      "text": "云开发(Serverless)"
+    },
+    {
+      "type": "text",
+      "text": "迅速搭建起安全可靠的用户认证系统。"
+    },
+    {
+      "type": "text",
+      "text": "提供简单易用、功能强大的端/云 SDK。"
+    },
+    {
+      "type": "text",
+      "text": "提供端云数据的协同管理、统一的数据模型和丰富的 API。"
+    },
+    {
+      "type": "text",
+      "text": "提供 Serverless 化的代码开发与运行平台。"
+    },
+    {
+      "type": "text",
+      "text": "提升应用页面加载速度。"
+    },
+    {
+      "type": "text",
+      "text": "Connect API"
+    },
+    {
+      "type": "text",
+      "text": "帮助实现流程自动化，从而提升工作效率。"
+    },
+    {
+      "type": "text",
+      "text": "联机对战服务为多人联机游戏提供了房间管理、玩家匹配、队伍管理、消息通信等功能。"
+    },
+    {
+      "type": "text",
+      "text": "游戏多媒体服务是华为游戏中心推出的一款快速实现游戏内实时语音、实时信令、语音消息等功能的服务。"
+    },
+    {
+      "type": "text",
+      "text": "上架你的 HarmonyOS 应用。"
+    },
+    {
+      "type": "text",
+      "text": "上架你的 HarmonyOS 游戏。"
+    },
+    {
+      "type": "text",
+      "text": "更新、升级、下架、删除你的 HarmonyOS 应用。"
+    },
+    {
+      "type": "text",
+      "text": "选择特定用户群组来测试你的应用。"
+    },
+    {
+      "type": "text",
+      "text": "面向全网公开招募部分用户测试你的应用。"
+    },
+    {
+      "type": "text",
+      "text": "开发团队内共享应用或进行内部测试。"
+    },
+    {
+      "type": "text",
+      "text": "云测试致力于为您提供便捷的一站式移动应用测试服务。"
+    },
+    {
+      "type": "text",
+      "text": "华为云调试致力于为您提供高效的云端设备调试解决方案。"
+    },
+    {
+      "type": "text",
+      "text": "云监控为您提供开放型一站式监控解决方案。"
+    },
+    {
+      "type": "text",
+      "text": "HiSmartPerf 是依托华为芯片和操作系统的优势构建的游戏性能优化工具。"
+    },
+    {
+      "type": "text",
+      "text": "现网质量监测解决方案。"
+    },
+    {
+      "type": "text",
+      "text": "为你提供应用的分发、用户、运营、质量、财务分析报表。"
+    },
+    {
+      "type": "text",
+      "text": "为你提供元服务的分发、用户、履约情况分析报表。"
+    },
+    {
+      "type": "text",
+      "text": "行业风向标包括应用和游戏两大行业的数据指标和用户画像情况。"
+    },
+    {
+      "type": "text",
+      "text": "App Linking"
+    },
+    {
+      "type": "text",
+      "text": "了解 APP Linking 相关知识。"
+    },
+    {
+      "type": "text",
+      "text": "根据位置信息，精准推荐用户所需的服务。"
+    },
+    {
+      "type": "text",
+      "text": "助你打造与 HarmonyOS 生态系统完美融合的应用/元服务，让更多用户享受便利的科技与愉悦的体验。"
+    },
+    {
+      "type": "text",
+      "text": "提供符合当前状态的交互方式，保证用户交互体验的一致性。"
+    },
+    {
+      "type": "text",
+      "text": "打造多元化、连续化、智慧化，流量和商机无处不在的数字生态。"
+    },
+    {
+      "type": "text",
+      "text": "学习不同屏幕尺寸和设备类型知识，针对设备特性打造应用/元服务。"
+    },
+    {
+      "type": "text",
+      "text": "为你提供适合特征型场景的界面设计样式最佳案例。"
+    },
+    {
+      "type": "text",
+      "text": "引导应用的设计与开发，以保证应用良好的使用体验。"
+    },
+    {
+      "type": "text",
+      "text": "及时了解阶段性的变更信息。"
+    },
+    {
+      "type": "text",
+      "text": "提供阅读翻页方式调节、字体大小调节等场景示例，富文本渲染、镜像语言等问题的处理方案。"
+    },
+    {
+      "type": "text",
+      "text": "助力电影选座、车牌号编辑等功能开发，提供日程生效、远程数据等问题的处理指南。"
+    },
+    {
+      "type": "text",
+      "text": "覆盖表情包、语音通话、好友推荐等高频开发场景，解答图库读取、模式监听等常见开发问题。"
+    },
+    {
+      "type": "text",
+      "text": "提供底部抽屉滑动、应用内悬浮工具球等功能开发示例，解答视频水印、增加刻度等常见技术问题。"
+    },
+    {
+      "type": "text",
+      "text": "搭载音频播控、文件管理等模块，详解横竖屏切换等场景示例，解决视频加载、播放中断等常见问题。"
+    },
+    {
+      "type": "text",
+      "text": "覆盖股票行情走势分时线与日 K 线、股票键盘等高频开发场景，解答卡证识别、DH 密钥生成等适配常见问题。"
+    },
+    {
+      "type": "text",
+      "text": "涵盖会议创建、证件照拍摄、考勤打卡位置获取等常见应用功能，提供远程访问 PDF、长文本换行等常见问题的操作指南。"
+    },
+    {
+      "type": "text",
+      "text": "快速构建商品列表、商品详情、购物车及支付下单等购物比价类应用的常见功能。"
+    },
+    {
+      "type": "text",
+      "text": "覆盖刷题页面滑动、双向滚动课程表等场景示例，提供横竖屏转换、字体注册等开发问题的解决方案。"
+    },
+    {
+      "type": "text",
+      "text": "构建滤镜、录制、图片编辑等高频应用场景，提供对焦失败、色彩不准等常见技术问题的应对策略。"
+    },
+    {
+      "type": "text",
+      "text": "提供底部弹窗固定显示等常见场景示例，对象型数据储存、HCI 日志获取等高频问题的解答。"
+    },
+    {
+      "type": "text",
+      "text": "提供比赛计分器、运动开始结束交互动画等开发示例，人脸检测、定位授权等问题解决方案。"
+    },
+    {
+      "type": "text",
+      "text": "覆盖计算验证弹窗、防沉迷控制等儿童类应用高频场景，提供练字板、绘画板等常见功能开发示例。"
+    },
+    {
+      "type": "text",
+      "text": "提供获取目的地位置及周边配套地图等常见功能的开发示例，助力快速构建旅游园区类应用。"
+    },
+    {
+      "type": "text",
+      "text": "提供商家地址路线导航、城市选择等场景开发示例，以及商品切换、横屏图片展示等常见问题的技术解决方案。"
+    },
+    {
+      "type": "text",
+      "text": "点击卡片跳转乘车码、实时公交服务等场景的开发示例，提供定位偏差、数据截断等常见问题的方案指导。"
+    },
+    {
+      "type": "text",
+      "text": "提供宝宝成长记录时间轴、身高体重记录曲线等高频功能开发示例，助力快速构建孕育健康类应用。"
+    },
+    {
+      "type": "text",
+      "text": "提供主题颜色自定义、用户协议与隐私政策弹窗等常见应用功能的开发示例，以及开发过程中技术问题的解决方案。"
+    },
+    {
+      "type": "text",
+      "text": "HarmonyOS 3.1/4.0及以下"
+    },
+    {
+      "type": "text",
+      "text": "HarmonyOS 基础能力"
+    },
+    {
+      "type": "text",
+      "text": "DevEco Studio"
+    },
+    {
+      "type": "text",
+      "text": "面向全场景多设备，提供一站式的分布式应用开发平台"
+    },
+    {
+      "type": "text",
+      "text": "应用模型是HarmonyOS为开发者提供的应用程序所需能力的抽象提炼。"
+    },
+    {
+      "type": "text",
+      "text": "媒体系统提供用户视觉、听觉信息的处理能力。"
+    },
+    {
+      "type": "text",
+      "text": "数据管理为开发者提供数据存储、数据管理能力。"
+    },
+    {
+      "type": "text",
+      "text": "ArkTS是HarmonyOS优选的主力应用开发语言。"
+    },
+    {
+      "type": "text",
+      "text": "应用可以通过通知接口发送通知消息。"
+    },
+    {
+      "type": "text",
+      "text": "访问控制，用户认证、密钥管理等内容介绍"
+    },
+    {
+      "type": "text",
+      "text": "应用事件打点开发指导。"
+    },
+    {
+      "type": "text",
+      "text": "方舟开发框架为HarmonyOS应用的UI开发提供了完整的基础设施。"
+    },
+    {
+      "type": "text",
+      "text": "窗口模块用于在同一块物理屏幕上，提供多个应用界面显示、交互的机制。"
+    },
+    {
+      "type": "text",
+      "text": "提供HTTP数据请求、WebSocket连接、\nSocket连接等能力。"
+    },
+    {
+      "type": "text",
+      "text": "设计具有良好国际化能力的应用，高效、低成本的实现应用的本地化。"
+    },
+    {
+      "type": "text",
+      "text": "App Services"
+    },
+    {
+      "type": "text",
+      "text": "华为账号服务为您提供了简单、安全的登录授权功能，方便用户快捷登录。"
+    },
+    {
+      "type": "text",
+      "text": "广告服务依托华为终端平台与数据能力为您提供流量变现服务。"
+    },
+    {
+      "type": "text",
+      "text": "华为分析服务是针对移动应用、Web、快应用、快游戏、小程序等产品的一站式用户行为分析平台。"
+    },
+    {
+      "type": "text",
+      "text": "App Linking"
+    },
+    {
+      "type": "text",
+      "text": "App Linking是一种支持Android、iOS、HarmonyOS、Web等多种平台的跳转链接。"
+    },
+    {
+      "type": "text",
+      "text": "情景感知服务为您提供获取用户当前时空、位置、活动状态、音频设备状态、环境光、天气、信标等情景感知组合能力。"
+    },
+    {
+      "type": "text",
+      "text": "华为服务号提供给商家对应的服务号，让用户快速发现商家服务。"
+    },
+    {
+      "type": "text",
+      "text": "华为云空间服务允许您创建使用华为云空间的应用程序。"
+    },
+    {
+      "type": "text",
+      "text": "态标签管理是一个动态标签管理系统。"
+    },
+    {
+      "type": "text",
+      "text": "游戏服务主要提供快速、低成本构建游戏基本能力。"
+    },
+    {
+      "type": "text",
+      "text": "华为运动健康，提供全面的数字健康服务。"
+    },
+    {
+      "type": "text",
+      "text": "用户身份服务为用户提供统一的地址管理服务。"
+    },
+    {
+      "type": "text",
+      "text": "华为应用内支付服务为App提供便捷的应用内支付体验和简便的接入流程。"
+    },
+    {
+      "type": "text",
+      "text": "定位服务为您提供快速、精准地获取用户位置信息的能力。"
+    },
+    {
+      "type": "text",
+      "text": "地图服务给您提供一套地图开发调用的SDK。"
+    },
+    {
+      "type": "text",
+      "text": "导航服务主要提供合理的路线规划引擎、精准Turn-By-Turn导航。"
+    },
+    {
+      "type": "text",
+      "text": "通过开放卡券等多样化的营销能力，打造跨业态多场景的会员生态。"
+    },
+    {
+      "type": "text",
+      "text": "向客户端应用实时推送消息，提升用户的感知度和活跃度。"
+    },
+    {
+      "type": "text",
+      "text": "快应用是一种基于行业标准开发的新型免安装应用。"
+    },
+    {
+      "type": "text",
+      "text": "统一扫码服务提供全球主流制式二维码和条形码的扫描、识别和生成能力。"
+    },
+    {
+      "type": "text",
+      "text": "Search Kit通过云侧API方式，全面开放Petal Search搜索能力。"
+    },
+    {
+      "type": "text",
+      "text": "Weather Kit融合多家行业TOP供应商，提供专业、精准、稳定的数据服务。"
+    },
+    {
+      "type": "text",
+      "text": "Site Kit提供位置查询服务，帮助您的用户更加方便地使用位置相关服务。"
+    },
+    {
+      "type": "text",
+      "text": "UI Engine是华为提供的一套UI开发工具包。"
+    },
+    {
+      "type": "text",
+      "text": "Wallet Kit集成了终端“芯-端-云”全栈技术的开放能力。"
+    },
+    {
+      "type": "text",
+      "text": "Accelerate Kit支持多线程库和性能加速库。"
+    },
+    {
+      "type": "text",
+      "text": "AR Engine是一款用于在HarmonyOS/Android上构建增强现实应用的引擎。包含AR Engine服务、AR Cloud服务与XRKit服务，其中XRKit是基于AR Engine提供场景化、组件化的极简AR解决方案，二者均可实现虚拟世界与现实世界的融合，带来全新的交互体验。"
+    },
+    {
+      "type": "text",
+      "text": "Computer Graphics Kit提供前沿计算机图形学领域的渲染框架、插件SDK与GPU扩展接口。"
+    },
+    {
+      "type": "text",
+      "text": "GameTurbo Engine通过游戏App给系统提供精细化场景信息、配置信息、网络信息等。"
+    },
+    {
+      "type": "text",
+      "text": "Scene Kit是华为面向开发者提供的一款高性能、低功耗、轻量级渲染引擎服务。"
+    },
+    {
+      "type": "text",
+      "text": "HUAWEI VR Engine是为华为VR内容开发者提供的平台。"
+    },
+    {
+      "type": "text",
+      "text": "Audio Editor Kit是华为帮助全球开发者快速构建各类应用音频能力的服务。"
+    },
+    {
+      "type": "text",
+      "text": "华为提供了低时延K歌耳返、多路录音等增强音频体验能力"
+    },
+    {
+      "type": "text",
+      "text": "Audio Kit是华为公司在音频领域的能力集合，为您提供了基于HMS Core的音频播放能力。"
+    },
+    {
+      "type": "text",
+      "text": "AV Pipeline Kit是面向移动端开发者的多媒体开放能力体系。"
+    },
+    {
+      "type": "text",
+      "text": "Camera Engine是华为影像能力开放接口，旨在帮助三方简单、高效使用相机系统强大能力，"
+    },
+    {
+      "type": "text",
+      "text": "Image Kit为您提供图像智能编辑与设计、场景动效制作能力。"
+    },
+    {
+      "type": "text",
+      "text": "Panorama Kit是华为为您提供的全景图片浏览和交互服务。"
+    },
+    {
+      "type": "text",
+      "text": "Video Editor Kit是华为快速构建视频编辑能力的服务。"
+    },
+    {
+      "type": "text",
+      "text": "Video Engine包含电影级调色和高级视频编码两个部分。帮助您向用户提供高清、低码、流畅的视频媒体体验。"
+    },
+    {
+      "type": "text",
+      "text": "Video Kit提供视频播放、HDR Vivid视频处理服务。"
+    },
+    {
+      "type": "text",
+      "text": "WisePlay DRM为合作伙伴提供内容的数字版权保护。"
+    },
+    {
+      "type": "text",
+      "text": "ML Kit提供机器学习套件，为开发者使用机器学习能力开发各类应用。"
+    },
+    {
+      "type": "text",
+      "text": "让开发者能够快速地利用华为强大的AI处理能力，为用户提供更好的智慧应用体验。"
+    },
+    {
+      "type": "text",
+      "text": "HUAWEI HiAI Engine"
+    },
+    {
+      "type": "text",
+      "text": "HUAWEI HiAI是面向移动终端的AI计算平台。"
+    },
+    {
+      "type": "text",
+      "text": "HUAWEI HiAI Service"
+    },
+    {
+      "type": "text",
+      "text": "快服务智慧平台、小艺对话开发平台。"
+    },
+    {
+      "type": "text",
+      "text": "Smart Device"
+    },
+    {
+      "type": "text",
+      "text": "CaaS Engine是华为依托畅连业务通信能力，面向应用开发者和硬件开发者提供的开放接口。"
+    },
+    {
+      "type": "text",
+      "text": "HUAWEI Cast Engine是华为提供以手机为中心的大小屏协同能力。"
+    },
+    {
+      "type": "text",
+      "text": "DeviceVirtualization Engine是华为提供的多设备虚拟化平台。"
+    },
+    {
+      "type": "text",
+      "text": "HUAWEI HiCar"
+    },
+    {
+      "type": "text",
+      "text": "HUAWEI HiCar是华为提供的人-车-家全场景智慧互联解决方案。"
+    },
+    {
+      "type": "text",
+      "text": "HUAWEI OneHop Engine是多终端业务协同的解决方案技术。"
+    },
+    {
+      "type": "text",
+      "text": "Pencil Engine是华为提供的一套手写能力套件。"
+    },
+    {
+      "type": "text",
+      "text": "Share Engine作为华为分享能力在三方设备上延伸的开发工具包，是业内优质的跨设备传输文件的解决方案。"
+    },
+    {
+      "type": "text",
+      "text": "HUAWEI Wear Engine面向手机和穿戴设备的应用与服务开发者，提供华为穿戴设备开放能力。"
+    },
+    {
+      "type": "text",
+      "text": "为应用提供安全可信的本地生物特征认证和安全便捷的线上快速身份验证能力。"
+    },
+    {
+      "type": "text",
+      "text": "Keyring提供凭据管理接口，为Android手机、平板提供用户认证凭据本地存储、跨应用、跨形态共享的能力。"
+    },
+    {
+      "type": "text",
+      "text": "帮助保护应用程序免受安全威胁。"
+    },
+    {
+      "type": "text",
+      "text": "提供安全地保护用户数据、获取系统数据的能力。"
+    },
+    {
+      "type": "text",
+      "text": "为您提供基于硬件隔离的程序运行环境。"
+    },
+    {
+      "type": "text",
+      "text": "人脸识别是本地认证SDK的一部分，为您提供了认证使用者是否是机主的能力。"
+    },
+    {
+      "type": "text",
+      "text": "5G Modem Kit"
+    },
+    {
+      "type": "text",
+      "text": "提供华为先进、专业化的5G通信服务，为您的应用提供5G小区信息服务。"
+    },
+    {
+      "type": "text",
+      "text": "帮助开发者快速实现应用内调用华为线性马达振动能力。"
+    },
+    {
+      "type": "text",
+      "text": "依托华为终端强大的平台和硬件能力为您提供的移动管理终端设备的解决方案。"
+    },
+    {
+      "type": "text",
+      "text": "LinkTurbo Engine是在端侧将Wi-Fi和蜂窝网络同时使用的技术。"
+    },
+    {
+      "type": "text",
+      "text": "为安装在华为设备上的用于企业环境下的应用提供系统级权限的管理功能。"
+    },
+    {
+      "type": "text",
+      "text": "让您便捷地实现周边手机自主发现、自主互联、传输数据。让您便捷地获取周边蓝牙信标消息，向用户提供场景化的服务。"
+    },
+    {
+      "type": "text",
+      "text": "Network Kit"
+    },
+    {
+      "type": "text",
+      "text": "Network Kit是一款网络基础服务套件，聚合远场网络通信优秀实践。"
+    },
+    {
+      "type": "text",
+      "text": "Wireless Kit提供无线通信传输能力封装以及网络QoE能力开放。"
+    },
+    {
+      "type": "text",
+      "text": "HMS Core使用入门介绍。"
+    },
+    {
+      "type": "text",
+      "text": "HMS Core全场景支持一览表。"
+    },
+    {
+      "type": "text",
+      "text": "为开发者版本更新汇总信息。"
+    },
+    {
+      "type": "text",
+      "text": "AppGallery Connect"
+    },
+    {
+      "type": "text",
+      "text": "预约、内测、开放式测试、首发、正式上架、分阶段发布、素材测试等分发服务。"
+    },
+    {
+      "type": "text",
+      "text": "游戏首发是指从未公开运营过的新游戏，首次在华为渠道以联合运营的方式。"
+    },
+    {
+      "type": "text",
+      "text": "素材管理服务提供素材测试和素材更新能力。"
+    },
+    {
+      "type": "text",
+      "text": "游戏内测是您验证游戏对华为手机适配情况，获取游戏数据情况来改进游戏的关键环节。"
+    },
+    {
+      "type": "text",
+      "text": "游戏预约指在游戏首发前进行宣传，配合游戏论坛、资讯的持续更新曝光。"
+    },
+    {
+      "type": "text",
+      "text": "采用分阶段发布，您可以先向一定比例的用户发布更新的版本，然后再逐步提升用户比例，最终实现全网发布。"
+    },
+    {
+      "type": "text",
+      "text": "Connect API"
+    },
+    {
+      "type": "text",
+      "text": "AppGallery Connect API是一套RESTful API。"
+    },
+    {
+      "type": "text",
+      "text": "为多人联机游戏提供了房间管理、玩家匹配、队伍管理、消息通信等功能。"
+    },
+    {
+      "type": "text",
+      "text": "快速实现游戏内实时语音、实时信令、语音消息等功能的服务。"
+    },
+    {
+      "type": "text",
+      "text": "Petal UI服务为开发者提供包括日历、分类等多种UI组件。"
+    },
+    {
+      "type": "text",
+      "text": "Petal Aegis"
+    },
+    {
+      "type": "text",
+      "text": "由专业安全团队开发，提供简单易用的安全API。"
+    },
+    {
+      "type": "text",
+      "text": "应用可无需升级，也可以在云端灵活修改应用的行为和外观。"
+    },
+    {
+      "type": "text",
+      "text": "在用户使用应用时，基于用户使用情景向用户发送有针对性的消息，鼓励用户使用应用的某些关键功能，增强用户粘性。"
+    },
+    {
+      "type": "text",
+      "text": "App Linking"
+    },
+    {
+      "type": "text",
+      "text": "支持Android、iOS、HarmonyOS、Web等多种平台的跳转链接。"
+    },
+    {
+      "type": "text",
+      "text": "通过制作图章链接来分发应用，将链接投放到推广的第三方应用或者社交媒体。"
+    },
+    {
+      "type": "text",
+      "text": "崩溃服务是一个功能强大、轻量级的崩溃解决方案。"
+    },
+    {
+      "type": "text",
+      "text": "性能管理服务是一个功能强大、使用简便的性能管理解决方案。"
+    },
+    {
+      "type": "text",
+      "text": "云测试致力于为您提供便捷的一站式移动应用测试服务。"
+    },
+    {
+      "type": "text",
+      "text": "华为云调试致力于为您提供高效的云端设备调试解决方案。"
+    },
+    {
+      "type": "text",
+      "text": "正式上架应用前，提前发布一个测试版本给您信任的测试用户。"
+    },
+    {
+      "type": "text",
+      "text": "在正式提交应用审核前，您可先通过接入检测服务对您的应用软件包进行自检。"
+    },
+    {
+      "type": "text",
+      "text": "您可以使用工具测试游戏、查看报告、分析问题、调优程序。"
+    },
+    {
+      "type": "text",
+      "text": "介绍联运服务涉及SDK接入的功能开发。"
+    },
+    {
+      "type": "text",
+      "text": "介绍联运服务涉及SDK接入的功能开发。"
+    },
+    {
+      "type": "text",
+      "text": "华为为开发者和消费者推出的精品应用付费下载服务。"
+    },
+    {
+      "type": "text",
+      "text": "为你提供应用的分发、运营、质量分析报表。"
+    },
+    {
+      "type": "text",
+      "text": "为你提供元服务的分发、画像分析报表。"
+    },
+    {
+      "type": "text",
+      "text": "为您的应用快速构建安全可靠的用户认证系统。"
+    },
+    {
+      "type": "text",
+      "text": "云数据库是一款端云协同的数据库产品。"
+    },
+    {
+      "type": "text",
+      "text": "为开发者提供Serverless化的代码开发与运行平台。"
+    },
+    {
+      "type": "text",
+      "text": "可伸缩、免维护的云端存储服务。"
+    },
+    {
+      "type": "text",
+      "text": "API网关服务是用于实现完整API托管的服务。"
+    },
+    {
+      "type": "text",
+      "text": "为开发者提供云托管服务介绍。"
+    },
+    {
+      "type": "text",
+      "text": "Serverless 模板"
+    },
+    {
+      "type": "text",
+      "text": "基于Serverless服务构建的场景化解决方案。"
+    },
+    {
+      "type": "text",
+      "text": "DESIGN FOR HUAWEI"
+    },
+    {
+      "type": "text",
+      "text": "为消费者提供更丰富的配件选择和更好的用户体验。"
+    },
+    {
+      "type": "text",
+      "text": "HUAWEI Research"
+    },
+    {
+      "type": "text",
+      "text": "HUAWEI Research是一个帮助合作伙伴高效开展创新研究的平台。"
+    },
+    {
+      "type": "text",
+      "text": "擎云生态合作是基于华为擎云系列桌面终端推出的生态适配计划。"
+    },
+    {
+      "type": "text",
+      "text": "基于Ha华为云调试致力于为您免费提供高效的云端设备调试解决方案。"
+    },
+    {
+      "type": "text",
+      "text": "HMS Toolkit"
+    },
+    {
+      "type": "text",
+      "text": "HMS Toolkit是一个IDE工具插件，提供一套含应用创建、编码和转换、调测、测试和发布的开发工具。"
+    },
+    {
+      "type": "text",
+      "text": "多语言服务会分期开发全球化能力评估、多语言规范性检查、禁忌检查、全球化特性评估等服务。"
+    },
+    {
+      "type": "text",
+      "text": "提供完善的快应用极速编程、云端全机型覆盖测试等必备工具能力的同时，继承开发者习惯，让快应用开发更快。"
+    },
+    {
+      "type": "text",
+      "text": "Reality Studio"
+    },
+    {
+      "type": "text",
+      "text": "HUAWEI Reality Studio是多功能3D编辑器，它提供了3D场景编辑，动画制作和事件交互等功能。"
+    },
+    {
+      "type": "text",
+      "text": "Theme Studio"
+    },
+    {
+      "type": "text",
+      "text": "Theme Studio是一款智能、高效、可视化的全场景主题/表盘制作工具。"
+    },
+    {
+      "type": "text",
+      "text": "Graphics Profiler是专为GPU分析和优化提供的一种调试分析解决方案。"
+    },
+    {
+      "type": "text",
+      "text": "角标是华为桌面提供给各应用一种展示未读信息的操作，以未读信息的数字合成一张图片并绘制到该应用图标的右上角。"
+    },
+    {
+      "type": "text",
+      "text": "Health Industry SDK面向运动健康行业应用与服务开发者，提供华为行业穿戴设备的开放能力。"
+    },
+    {
+      "type": "text",
+      "text": "快游戏是一种基于行业标准开发的新型免安装应用。"
+    },
+    {
+      "type": "text",
+      "text": "HUAWEI空间智能是华为面向2B行业进行智慧化升级，如酒店、地产、办公、教育和医疗等，全面开放全屋智能系统的端云相关能力。"
+    },
+    {
+      "type": "text",
+      "text": "HarmonyOS 的多种设备进行通用性设计和开发。"
+    },
+    {
+      "type": "text",
+      "text": "了解元服务设计和开发的元素。"
+    },
+    {
+      "type": "text",
+      "text": "营造一个充满关怀 ,切实保障人们安全、方便、舒适的现代生活环境。"
+    },
+    {
+      "type": "text",
+      "text": "产品和应用要在全球发布，需考虑全球化流程，即“国际化”和“本地化”。"
+    },
+    {
+      "type": "text",
+      "text": "构建优秀的分布式体验。"
+    },
+    {
+      "type": "text",
+      "text": "指导华为全场景智能终端设备上语音交互设计体验。"
+    },
+    {
+      "type": "text",
+      "text": "为用户打造放心省心的智能产品使用体验。"
+    }
+  ],
+  "links": [
+    {
+      "text": "链接",
+      "href": "https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/application-dev-guide"
+    },
+    {
+      "text": "链接",
+      "href": "https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/overview-allversion"
+    },
+    {
+      "text": "链接",
+      "href": "https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/start-overview"
+    },
+    {
+      "text": "链接",
+      "href": "https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/development-fundamentals"
+    },
+    {
+      "text": "链接",
+      "href": "https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-get-started"
+    },
+    {
+      "text": "链接",
+      "href": "https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/resource-categories-and-access"
+    },
+    {
+      "text": "链接",
+      "href": "https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/abilitykit-overview"
+    },
+    {
+      "text": "链接",
+      "href": "https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/accessibilitykit-overview"
+    },
+    {
+      "text": "链接",
+      "href": "https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/data-mgmt-overview"
+    },
+    {
+      "text": "链接",
+      "href": "https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkui-overview"
+    },
+    {
+      "text": "链接",
+      "href": "https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-overview"
+    },
+    {
+      "text": "链接",
+      "href": "https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-component-overview"
+    },
+    {
+      "text": "链接",
+      "href": "https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/background-task-overview"
+    },
+    {
+      "text": "链接",
+      "href": "https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/core-file-kit-intro"
+    },
+    {
+      "text": "链接",
+      "href": "https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/data-augmentation-kit-guide"
+    },
+    {
+      "text": "链接",
+      "href": "https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/formkit-overview"
+    },
+    {
+      "text": "链接",
+      "href": "https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ime-kit-intro"
+    },
+    {
+      "text": "链接",
+      "href": "https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ipc-rpc-overview"
+    },
+    {
+      "text": "链接",
+      "href": "https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/i18n-l10n"
+    },
+    {
+      "text": "链接",
+      "href": "https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-design-introduction"
+    },
+    {
+      "text": "链接",
+      "href": "https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/asset-store-kit-overview"
+    },
+    {
+      "text": "链接",
+      "href": "https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/basic-services-kit-overview"
+    },
+    {
+      "text": "链接",
+      "href": "https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/car-introduction"
+    },
+    {
+      "text": "链接",
+      "href": "https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/connectivity-kit-intro"
+    },
+    {
+      "text": "链接",
+      "href": "https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-architecture-kit-intro"
+    },
+    {
+      "text": "链接",
+      "href": "https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/dlp-overview"
+    },
+    {
+      "text": "链接",
+      "href": "https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/statusbar-extension-introduction"
+    },
+    {
+      "text": "链接",
+      "href": "https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/device-certificate-kit-intro"
+    },
+    {
+      "text": "链接",
+      "href": "https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devicesecurity-introduction"
+    },
+    {
+      "text": "链接",
+      "href": "https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/distributedservice-kit-intro"
+    },
+    {
+      "text": "链接",
+      "href": "https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/driverdevelopment-overview"
+    },
+    {
+      "text": "链接",
+      "href": "https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/dataguard-introduction"
+    },
+    {
+      "text": "链接",
+      "href": "https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/fast-introduction"
+    },
+    {
+      "text": "链接",
+      "href": "https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ffrt-overview"
+    },
+    {
+      "text": "链接",
+      "href": "https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/input-overview"
+    },
+    {
+      "text": "链接",
+      "href": "https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-intro"
+    },
+    {
+      "text": "链接",
+      "href": "https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/multimodalawareness-kit-intro"
+    },
+    {
+      "text": "链接",
+      "href": "https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/nearlink-introduction"
+    },
+    {
+      "text": "链接",
+      "href": "https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/net-mgmt-overview"
+    },
+    {
+      "text": "链接",
+      "href": "https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/networkboost-introduction"
+    },
+    {
+      "text": "链接",
+      "href": "https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/onlineauthentication-introduction"
+    },
+    {
+      "text": "链接",
+      "href": "https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/pen-introduction"
+    },
+    {
+      "text": "链接",
+      "href": "https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/performance-analysis-kit-overview"
+    },
+    {
+      "text": "链接",
+      "href": "https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/remote-communication-introduction"
+    },
+    {
+      "text": "链接",
+      "href": "https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/sensorservice-kit-intro"
+    },
+    {
+      "text": "链接",
+      "href": "https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/servicecollaborationkit-introduction"
+    },
+    {
+      "text": "链接",
+      "href": "https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/telephony-overview"
+    },
+    {
+      "text": "链接",
+      "href": "https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkxtest-guidelines-0000001930756221"
+    },
+    {
+      "text": "链接",
+      "href": "https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-overview"
+    },
+    {
+      "text": "链接",
+      "href": "https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/user-authentication-overview"
+    },
+    {
+      "text": "链接",
+      "href": "https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/we-business_introduction"
+    },
+    {
+      "text": "链接",
+      "href": "https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-kit-intro"
+    },
+    {
+      "text": "链接",
+      "href": "https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/avcodec-kit-intro"
+    },
+    {
+      "text": "链接",
+      "href": "https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/avsession-overview"
+    },
+    {
+      "text": "链接",
+      "href": "https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-overview"
+    },
+    {
+      "text": "链接",
+      "href": "https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/drm-overview"
+    },
+    {
+      "text": "链接",
+      "href": "https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/image-overview"
+    },
+    {
+      "text": "链接",
+      "href": "https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/media-kit-intro"
+    },
+    {
+      "text": "链接",
+      "href": "https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/photoaccesshelper-overview"
+    },
+    {
+      "text": "链接",
+      "href": "https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scan-introduction"
+    },
+    {
+      "text": "链接",
+      "href": "https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ringtone-introduction"
+    },
+    {
+      "text": "链接",
+      "href": "https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arengine-introduction"
+    },
+    {
+      "text": "链接",
+      "href": "https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkgraphics2d-introduction"
+    },
+    {
+      "text": "链接",
+      "href": "https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkgraphics3d-overview"
+    },
+    {
+      "text": "链接",
+      "href": "https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/graphics-accelerate-introduction"
+    },
+    {
+      "text": "链接",
+      "href": "https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/spatial-recon-introduction"
+    },
+    {
+      "text": "链接",
+      "href": "https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/xengine-kit-introduction"
+    },
+    {
+      "text": "链接",
+      "href": "https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-introduction"
+    },
+    {
+      "text": "链接",
+      "href": "https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ads-introduction"
+    },
+    {
+      "text": "链接",
+      "href": "https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/store-introduction"
+    },
+    {
+      "text": "链接",
+      "href": "https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/applinking-introduction"
+    },
+    {
+      "text": "链接",
+      "href": "https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/calendarmanager-overview"
+    },
+    {
+      "text": "链接",
+      "href": "https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/call-introduction"
+    },
+    {
+      "text": "链接",
+      "href": "https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-introduction"
+    },
+    {
+      "text": "链接",
+      "href": "https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/contacts-intro"
+    },
+    {
+      "text": "链接",
+      "href": "https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/enterprise-space-kit-guide"
+    },
+    {
+      "text": "链接",
+      "href": "https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/filemanagerservice-introduction"
+    },
+    {
+      "text": "链接",
+      "href": "https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-service-kit-ability"
+    },
+    {
+      "text": "链接",
+      "href": "https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-introduction"
+    },
+    {
+      "text": "链接",
+      "href": "https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/game-controller-introduction"
+    },
+    {
+      "text": "链接",
+      "href": "https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/gameservice-introduction"
+    },
+    {
+      "text": "链接",
+      "href": "https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/liveview-introduction"
+    },
+    {
+      "text": "链接",
+      "href": "https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/location-kit-intro"
+    },
+    {
+      "text": "链接",
+      "href": "https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-introduction"
+    },
+    {
+      "text": "链接",
+      "href": "https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/notification-overview"
+    },
+    {
+      "text": "链接",
+      "href": "https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-introduction"
+    },
+    {
+      "text": "链接",
+      "href": "https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/pdf-introduction"
+    },
+    {
+      "text": "链接",
+      "href": "https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/preview-introduction"
+    },
+    {
+      "text": "链接",
+      "href": "https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-kit-introduction"
+    },
+    {
+      "text": "阅读服务提供电子书解析、排版及阅读能力，实现多格式电子书的阅读体验。",
+      "href": "https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/reader-introduction"
+    },
+    {
+      "text": "链接",
+      "href": "https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scenario-fusion-introduction"
+    },
+    {
+      "text": "链接",
+      "href": "https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/screen-time-guard-guide"
+    },
+    {
+      "text": "链接",
+      "href": "https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/share-introduction\n"
+    },
+    {
+      "text": "链接",
+      "href": "https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/wallet-introduction"
+    },
+    {
+      "text": "链接",
+      "href": "https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/weather-service-introduction"
+    },
+    {
+      "text": "链接",
+      "href": "https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hmaf-introduction"
+    },
+    {
+      "text": "链接",
+      "href": "https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/core-speech-introduction"
+    },
+    {
+      "text": "链接",
+      "href": "https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/core-vision-introduction"
+    },
+    {
+      "text": "链接",
+      "href": "https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hiaifoundation-introduction"
+    },
+    {
+      "text": "链接",
+      "href": "https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/intents-introduction"
+    }
+  ],
+  "timestamp": "2026-04-17T00:35:43.928762",
+  "crawled_at": "2026-04-17 00:35:43",
+  "crawl_method": "huawei_json",
+  "status": "success"
+}
