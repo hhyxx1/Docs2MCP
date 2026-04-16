@@ -1,0 +1,116 @@
+#!/usr/bin/expect -f
+
+set SERVER_IP "115.190.247.178"
+set SERVER_PORT "4598"
+set SERVER_USER "root"
+set SERVER_PASSWORD "ZxMe6839"
+set PROJECT_DIR "/root/Docs2MCP"
+
+log_user 1
+
+puts "========================================="
+puts "Docs2MCP Server Deployment Script"
+puts "========================================="
+
+puts "\n\[1/9\] Connecting to server..."
+spawn ssh -o StrictHostKeyChecking=no -p $SERVER_PORT $SERVER_USER@$SERVER_IP
+
+expect {
+    -re "password:|PASSWORD:" {
+        send "$SERVER_PASSWORD\r"
+    }
+    timeout {
+        puts "Connection timeout"
+        exit 1
+    }
+    eof {
+        puts "Connection closed unexpectedly"
+        exit 1
+    }
+}
+
+expect {
+    "$ " { }
+    "# " { }
+    -re {\[.*\@.*\]\$} { }
+}
+
+puts "\[2/9\] Creating project directories..."
+send "mkdir -p $PROJECT_DIR/mcp-server/src/utils\r"
+expect -re "$ |# "
+send "mkdir -p $PROJECT_DIR/data\r"
+expect -re "$ |# "
+send "mkdir -p $PROJECT_DIR/logs\r"
+expect -re "$ |# "
+
+puts "\[3/9\] Checking Python installation..."
+send "python3 --version\r"
+expect -re "$ |# "
+
+puts "\[4/9\] Installing Python dependencies..."
+send "pip3 install -q Flask==2.3.0 Werkzeug==2.3.0 requests==2.26.0 beautifulsoup4==4.9.3 python-dotenv==0.19.0 lxml==4.9.3 APScheduler==3.10.4\r"
+expect -re "$ |# "
+puts "Dependencies installed"
+
+puts "\[5/9\] Checking if Flask is installed..."
+send "python3 -c 'import flask; print(flask.__version__)'\r"
+expect -re "$ |# "
+
+puts "\[6/9\] Creating systemd service..."
+set service_content {[Unit]
+Description=Docs2MCP Server
+After=network.target
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/root/Docs2MCP/mcp-server/src
+ExecStart=/usr/bin/python3 /root/Docs2MCP/mcp-server/src/app.py
+Restart=always
+RestartSec=10
+StandardOutput=append:/root/Docs2MCP/logs/stdout.log
+StandardError=append:/root/Docs2MCP/logs/stderr.log
+
+[Install]
+WantedBy=multi-user.target
+}
+
+send "cat > /etc/systemd/system/docs2mcp.service << 'EOF'\n$service_content\nEOF\r"
+expect -re "$ |# "
+
+send "systemctl daemon-reload\r"
+expect -re "$ |# "
+send "systemctl enable docs2mcp\r"
+expect -re "$ |# "
+puts "Service created and enabled"
+
+puts "\[7/9\] Creating start script..."
+send "cat > $PROJECT_DIR/mcp-server/start.sh << 'STARTSCRIPT'\n#!/bin/bash\ncd \$(dirname \$0)/src\npython3 app.py > ../logs/stdout.log 2>&1 &\necho \"MCP Server started\"\nSTARTSCRIPT\r"
+expect -re "$ |# "
+send "chmod +x $PROJECT_DIR/mcp-server/start.sh\r"
+expect -re "$ |# "
+
+puts "\[8/9\] Starting MCP server..."
+send "systemctl restart docs2mcp\r"
+expect -re "$ |# "
+send "sleep 3\r"
+expect -re "$ |# "
+send "systemctl status docs2mcp --no-pager -l\r"
+expect -re "$ |# "
+
+puts "\[9/9\] Verifying server..."
+send "curl -s http://localhost:5000/api/server/status\r"
+expect -re "$ |# "
+
+send "exit\r"
+expect eof
+
+puts ""
+puts "========================================="
+puts "Deployment script completed!"
+puts "========================================="
+puts "MCP Server should be running at: http://$SERVER_IP:5000"
+puts ""
+puts "Next steps:"
+puts "1. Check service status on server: systemctl status docs2mcp"
+puts "2. View logs: tail -f $PROJECT_DIR/logs/stdout.log"
