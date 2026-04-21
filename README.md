@@ -23,20 +23,13 @@ Docs2MCP 是一个帮助AI开发者的工具，通过爬取官方文档并将其
 
 ### 1. 服务器配置
 
-请先部署服务器，配置服务器地址。默认配置:
+默认配置:
 - 本地开发: `http://localhost:5000`
 - 生产部署: 使用你自己的服务器地址
 
-### 2. 配置环境变量
+详细部署步骤请参考 [3. 服务器部署](#3-服务器部署) 部分。
 
-复制示例配置文件:
-```bash
-cp mcp-server/.env.example mcp-server/.env
-```
-
-根据需要修改 `mcp-server/.env` 中的配置。
-
-### 3. API端点
+### 2. API端点
 
 - `GET /api/server/status` - 服务器状态
 - `GET /api/docs/list` - 文档列表
@@ -44,6 +37,47 @@ cp mcp-server/.env.example mcp-server/.env
 - `POST /api/docs/remove` - 移除文档
 - `GET /api/ide/query?q=<search>` - AI查询接口
 - `GET /mcp/info` - MCP信息
+
+### 3. 服务器部署
+
+#### 环境要求
+- Python 3.7+
+- pip 3.0+
+
+#### 部署步骤
+
+1. **安装依赖**
+   ```bash
+   cd mcp-server
+   pip install -r requirements.txt
+   ```
+
+2. **配置环境变量**
+   ```bash
+   cp .env.example .env
+   # 根据需要修改 .env 文件中的配置
+   ```
+
+3. **启动服务**
+   ```bash
+   cd src
+   python app.py
+   ```
+
+4. **后台运行（可选）**
+   ```bash
+   # 使用 nohup 在后台运行
+   nohup python app.py > server.log 2>&1 &
+   ```
+
+5. **防火墙配置**
+   ```bash
+   # 开放 5000 端口
+   sudo ufw allow 5000/tcp  # Ubuntu/Debian
+   # 或
+   sudo firewall-cmd --add-port=5000/tcp --permanent  # CentOS/RHEL
+   sudo firewall-cmd --reload
+   ```
 
 ### 4. 添加华为文档示例
 
@@ -54,7 +88,7 @@ curl -X POST http://localhost:5000/api/docs/add \
   -d '{"url": "https://developer.huawei.com/consumer/cn/doc/"}'
 ```
 
-### 4. IDE集成
+### 5. IDE集成
 
 #### Trae AI
 在Trae AI设置中添加MCP服务器，指向本项目的MCP端点。
@@ -139,7 +173,6 @@ flutter build web
 - ✅ 多端适配前端
 - ✅ 文档搜索
 - ✅ IDE AI集成
-
 - ✅ Web端控制页面
 
 ## License
