@@ -21,11 +21,22 @@ Docs2MCP 是一个帮助AI开发者的工具，通过爬取官方文档并将其
 
 ## 快速开始
 
-### 1. 服务器已部署
+### 1. 服务器配置
 
-MCP服务器已部署在: `http://115.190.247.178:5000`
+请先部署服务器，配置服务器地址。默认配置:
+- 本地开发: `http://localhost:5000`
+- 生产部署: 使用你自己的服务器地址
 
-### 2. API端点
+### 2. 配置环境变量
+
+复制示例配置文件:
+```bash
+cp mcp-server/.env.example mcp-server/.env
+```
+
+根据需要修改 `mcp-server/.env` 中的配置。
+
+### 3. API端点
 
 - `GET /api/server/status` - 服务器状态
 - `GET /api/docs/list` - 文档列表
@@ -34,10 +45,11 @@ MCP服务器已部署在: `http://115.190.247.178:5000`
 - `GET /api/ide/query?q=<search>` - AI查询接口
 - `GET /mcp/info` - MCP信息
 
-### 3. 添加华为文档示例
+### 4. 添加华为文档示例
 
 ```bash
-curl -X POST http://115.190.247.178:5000/api/docs/add \
+# 替换为你自己的服务器地址
+curl -X POST http://localhost:5000/api/docs/add \
   -H "Content-Type: application/json" \
   -d '{"url": "https://developer.huawei.com/consumer/cn/doc/"}'
 ```
@@ -48,14 +60,14 @@ curl -X POST http://115.190.247.178:5000/api/docs/add \
 在Trae AI设置中添加MCP服务器，指向本项目的MCP端点。
 
 #### VSCode + Cursor
-使用MCP扩展配置:
+使用MCP扩展配置（替换为你的服务器地址）:
 
 ```json
 {
   "mcpServers": {
     "docs2mcp": {
       "command": "npx",
-      "args": ["-y", "@modelcontextprotocol/server-http", "http://115.190.247.178:5000/mcp"]
+      "args": ["-y", "@modelcontextprotocol/server-http", "http://localhost:5000/mcp"]
     }
   }
 }
@@ -98,11 +110,49 @@ python app.py
 
 ### Flutter前端
 
+#### 运行到移动设备
 ```bash
 cd flutter-app
 flutter pub get
 flutter run
 ```
+
+#### 运行到Web端
+```bash
+cd flutter-app
+flutter pub get
+flutter run -d web
+```
+
+#### 构建Web版本
+```bash
+cd flutter-app
+flutter build web
+```
+
+#### 鸿蒙(HarmonyOS)平台
+
+1. 安装HarmonyOS兼容的Flutter SDK：
+   ```bash
+   git clone https://gitee.com/openharmony-sig/flutter_flutter.git
+   cd flutter_flutter
+   git checkout -b dev origin/dev
+   ```
+
+2. 配置环境变量指向HarmonyOS Flutter SDK
+
+3. 运行到HarmonyOS设备：
+   ```bash
+   cd flutter-app
+   flutter pub get
+   flutter run -d ohos
+   ```
+
+4. 构建HarmonyOS版本：
+   ```bash
+   cd flutter-app
+   flutter build ohos
+   ```
 
 ## 功能
 
@@ -112,6 +162,8 @@ flutter run
 - ✅ 多端适配前端
 - ✅ 文档搜索
 - ✅ IDE AI集成
+- ✅ 鸿蒙(HarmonyOS)平台支持
+- ✅ Web端控制页面
 
 ## License
 

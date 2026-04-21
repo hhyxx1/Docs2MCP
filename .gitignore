@@ -1,0 +1,36 @@
+# Flutter related
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+.pub-cache/
+.pub/
+build/
+
+# IDE
+.idea/
+.vscode/
+*.iml
+
+# Environment variables (sensitive)
+mcp-server/.env
+
+# Deployment files (sensitive)
+*.exp
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Node
+node_modules/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.so
+*.egg-info/
+dist/
+venv/
+env/

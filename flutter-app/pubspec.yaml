@@ -24,3 +24,16 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+  # Enable web support
+  assets:
+    - assets/
+  # Add platform support
+  platforms:
+    android:
+      defaultConfig:
+        minSdkVersion: 21
+    ios:
+      deploymentTarget: '11.0'
+    web:
+      pluginClass: Docs2MCPPlugin
+      fileName: docs2mcp_web.dart
