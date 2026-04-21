@@ -98,11 +98,49 @@ python app.py
 
 ### Flutter前端
 
+#### 运行到移动设备
 ```bash
 cd flutter-app
 flutter pub get
 flutter run
 ```
+
+#### 运行到Web端
+```bash
+cd flutter-app
+flutter pub get
+flutter run -d web
+```
+
+#### 构建Web版本
+```bash
+cd flutter-app
+flutter build web
+```
+
+#### 鸿蒙(HarmonyOS)平台
+
+1. 安装HarmonyOS兼容的Flutter SDK：
+   ```bash
+   git clone https://gitee.com/openharmony-sig/flutter_flutter.git
+   cd flutter_flutter
+   git checkout -b dev origin/dev
+   ```
+
+2. 配置环境变量指向HarmonyOS Flutter SDK
+
+3. 运行到HarmonyOS设备：
+   ```bash
+   cd flutter-app
+   flutter pub get
+   flutter run -d ohos
+   ```
+
+4. 构建HarmonyOS版本：
+   ```bash
+   cd flutter-app
+   flutter build ohos
+   ```
 
 ## 功能
 
@@ -112,6 +150,8 @@ flutter run
 - ✅ 多端适配前端
 - ✅ 文档搜索
 - ✅ IDE AI集成
+- ✅ 鸿蒙(HarmonyOS)平台支持
+- ✅ Web端控制页面
 
 ## License
 
