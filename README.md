@@ -136,7 +136,7 @@ python app.py
 
 ### Flutter前端
 
-#### 运行到移动设备
+#### 运行到移动设备 (Android/iOS)
 ```bash
 cd flutter-app
 flutter pub get
@@ -150,10 +150,50 @@ flutter pub get
 flutter run -d web
 ```
 
-#### 构建Web版本
+#### 运行到Windows端
+```bash
+cd flutter-app
+flutter pub get
+flutter run -d windows
+```
+
+#### 运行到Linux端
+```bash
+cd flutter-app
+flutter pub get
+flutter run -d linux
+```
+
+#### 构建各平台版本
+
+##### Web版本
 ```bash
 cd flutter-app
 flutter build web
+```
+
+##### Android版本
+```bash
+cd flutter-app
+flutter build apk
+```
+
+##### iOS版本
+```bash
+cd flutter-app
+flutter build ios
+```
+
+##### Windows版本
+```bash
+cd flutter-app
+flutter build windows
+```
+
+##### Linux版本
+```bash
+cd flutter-app
+flutter build linux
 ```
 
 
@@ -163,7 +203,7 @@ flutter build web
 - ✅ 自动爬取官方文档
 - ✅ 实时更新监控
 - ✅ MCP协议支持
-- ✅ 多端适配前端
+- ✅ 多端适配前端 (Web/Android/iOS/Windows/Linux)
 - ✅ 文档搜索
 - ✅ IDE AI集成
 - ✅ Web端控制页面
