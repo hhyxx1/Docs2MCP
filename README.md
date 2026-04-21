@@ -92,8 +92,7 @@ Docs2MCP/
 │       └── services/
 │           ├── mcp_service.dart
 │           └── storage_service.dart
-├── mcp-config.json       # MCP配置
-└── deploy_*.sh/exp       # 部署脚本
+└── mcp-config.json       # MCP配置
 ```
 
 ## 开发
@@ -130,29 +129,7 @@ cd flutter-app
 flutter build web
 ```
 
-#### 鸿蒙(HarmonyOS)平台
 
-1. 安装HarmonyOS兼容的Flutter SDK：
-   ```bash
-   git clone https://gitee.com/openharmony-sig/flutter_flutter.git
-   cd flutter_flutter
-   git checkout -b dev origin/dev
-   ```
-
-2. 配置环境变量指向HarmonyOS Flutter SDK
-
-3. 运行到HarmonyOS设备：
-   ```bash
-   cd flutter-app
-   flutter pub get
-   flutter run -d ohos
-   ```
-
-4. 构建HarmonyOS版本：
-   ```bash
-   cd flutter-app
-   flutter build ohos
-   ```
 
 ## 功能
 
@@ -162,7 +139,7 @@ flutter build web
 - ✅ 多端适配前端
 - ✅ 文档搜索
 - ✅ IDE AI集成
-- ✅ 鸿蒙(HarmonyOS)平台支持
+
 - ✅ Web端控制页面
 
 ## License
