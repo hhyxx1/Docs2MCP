@@ -9,7 +9,7 @@
         "5000"
       ],
       "env": {
-        "MCP_HOST": "115.190.247.178",
+        "MCP_HOST": "localhost",
         "MCP_PORT": "5000"
       },
       "description": "Docs2MCP - Documentation Crawler for AI Development"
