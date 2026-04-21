@@ -12,7 +12,7 @@ from bs4 import BeautifulSoup
 
 sys.path.insert(0, os.path.dirname(__file__))
 
-from utils.crawler import crawl_document, load_documents, crawl_with_requests
+from utils.crawler import crawl_document, load_crawled_documents
 from utils.scheduler import start_scheduler, get_watcher, init_watcher
 
 logging.basicConfig(
@@ -51,7 +51,7 @@ class MCPHandler(BaseHTTPRequestHandler):
         parsed = urlparse(self.path)
 
         if parsed.path == '/api/docs/list':
-            docs = load_documents()
+            docs = load_crawled_documents()
             self.send_json_response(200, {
                 'success': True,
                 'documents': docs,
@@ -232,7 +232,7 @@ class MCPHandler(BaseHTTPRequestHandler):
 
 def get_mcp_resources():
     """获取MCP资源列表"""
-    docs = load_documents()
+    docs = load_crawled_documents()
     resources = []
 
     for doc in docs:
@@ -307,7 +307,7 @@ def search_documents(query, limit=10):
     if not query:
         return []
 
-    docs = load_documents()
+    docs = load_crawled_documents()
     results = []
     query_lower = query.lower()
 
@@ -341,7 +341,7 @@ def search_documents(query, limit=10):
 
 def get_document_by_id(doc_id):
     """根据ID获取文档"""
-    docs = load_documents()
+    docs = load_crawled_documents()
     doc_id_decoded = doc_id.replace('_', '/').replace('-dot-', '.')
     for doc in docs:
         if doc.get('url') == doc_id_decoded:

@@ -1,6 +1,7 @@
 import 'dart:convert';
 import 'package:flutter/foundation.dart';
 import 'package:http/http.dart' as http;
+import 'storage_service.dart';
 
 class MCPProvider extends ChangeNotifier {
   final StorageService _storageService;
@@ -135,7 +136,7 @@ class MCPProvider extends ChangeNotifier {
 
       if (response.statusCode == 200) {
         final data = jsonDecode(response.body);
-        _documents = data['documents'] ?? [];
+        _documents = data['projects'] ?? [];
       } else {
         _error = 'Server error: ${response.statusCode}';
       }

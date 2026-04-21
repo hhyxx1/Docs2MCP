@@ -280,7 +280,7 @@ def crawl_document(url: str, depth: int = 2, use_selenium: bool = False) -> Dict
     documents = crawler.crawl()
     return {
         'url': url,
-        'title': documents[0]['title'] if documents else 'Untitled' if len(documents) > 0 else 'No content',
+        'title': documents[0]['title'] if documents else 'No content',
         'content': documents,
         'total': len(documents),
         'timestamp': datetime.now().isoformat(),
