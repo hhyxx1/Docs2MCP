@@ -9,7 +9,7 @@ Docs2MCP 是一个帮助AI开发者的工具，通过爬取官方文档并将其
 ```
 ┌─────────────────┐     ┌─────────────────┐     ┌─────────────────┐
 │   Flutter App   │────▶│   MCP Server    │────▶│   Official Docs  │
-│   (管理界面)     │     │   (后端服务)     │     │   (华为/Flutter)  │
+│   (管理界面)     │     │   (后端服务)     │     │   (官方文档)      │
 └─────────────────┘     └─────────────────┘     └─────────────────┘
                                │
                                ▼
@@ -79,16 +79,9 @@ Docs2MCP 是一个帮助AI开发者的工具，通过爬取官方文档并将其
    sudo firewall-cmd --reload
    ```
 
-### 4. 添加华为文档示例
 
-```bash
-# 替换为你自己的服务器地址
-curl -X POST http://localhost:5000/api/docs/add \
-  -H "Content-Type: application/json" \
-  -d '{"url": "https://developer.huawei.com/consumer/cn/doc/"}'
-```
 
-### 5. IDE集成
+### 4. IDE集成
 
 #### Trae AI
 在Trae AI设置中添加MCP服务器，指向本项目的MCP端点。
